@@ -1,0 +1,65 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+.container {
+  width:100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #d35400;
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border: 1px solid #f1c40f;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-card h2 {
+  color: #e67e22;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-card ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  .recipe-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .recipe-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
